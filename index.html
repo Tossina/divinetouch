@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Divine Touch &bull; Coiffure et ésthetique</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/neyllie.min.css">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/lib/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/perso.css">
+    <!--Favicon-->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  </head>
+  <body>
+    <!-- Modal rendez-vous -->
+    <div id="modalBottomSheet" class="modal bottom-sheet">
+      <div class="modal-content neyllie-gd-2">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-5 col-md-5 py-5">
+                <img src="assets/img/photos/resa.jpg" class="img-fluid shadow-box">
+            </div>
+
+            <div class="col-lg-7 col-md-7 pt-2">
+                <img src="assets/img/logo.png" class="img-fluid mx-auto d-block h-5">
+                <h1 class="h1-fluid text-center py-0 my-0">
+                    <span class="lead">Demande de rendez-vous</span>
+                </h1>
+
+                <!--card contact-->
+                <div class="card card-contact z-depth-3">
+                    <div class="card-content">
+                        <div class="pt-4">
+                            <div class="row">
+                                <form class="col form-contact s12">
+                                    <div class="row contact-field">
+                                        <div class="input-field col s12">
+                                            <i class="pe-7s-user prefix"></i>
+                                            <input id="icon_prefi" type="text" class="validate blue-grey-text">
+                                            <label for="icon_prefi">Nom complet</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row contact-field m-top">
+                                        <div class="input-field col s6">
+                                            <i class="pe-7s-call prefix"></i>
+                                            <input id="icon_telephon" type="tel" class="validate blue-grey-text">
+                                            <label for="icon_telephon">Téléphone</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <i class="pe-7s-mail prefix"></i>
+                                            <input id="icon_mail" type="email" class="validate blue-grey-text">
+                                            <label for="icon_mail">E-mail</label>
+                                        </div>
+                                    </div>
+                                    <div class="row contact-field m-top">
+                                        <div class="input-field col s6">
+                                            <i class="pe-7s-news-paper prefix"></i>
+                                            <input id="icondate" type="tel" class="datepicker validate blue-grey-text">
+                                            <label for="icondate">Date demandé</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <i class="pe-7s-clock prefix"></i>
+                                            <input id="iconheure" type="email" class="timepicker validate blue-grey-text">
+                                            <label for="iconheure">Heure demandé</label>
+                                        </div>
+                                    </div>
+                                    <div class="row contact-field m-top">
+                                        <div class="input-field col s12">
+                                            <select>
+                                              <option class="text-dark" value="" selected>Choisir le services</option>
+                                              <option class="text-dark" value="1">Make up</option>
+                                              <option class="text-dark" value="2">Coiffure</option>
+                                              <option class="text-dark" value="3">Manicure</option>
+                                              <option class="text-dark" value="4">Pedicure</option>
+                                            </select>
+                                            <label>Services demandé</label>
+                                        </div>
+                                    </div>
+                                        
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-floating halfway-fab btn-lg center amber darken-1" id="plusPhotos"><i class="pe-7f-paper-plane pe-2x pe-va"></i></a>
+                </div>
+                <!--/card contact-->
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal rendez-vous -->
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="mooving-neyllie-gd-2">
+              <div class="nav-wrapper smoothscroll">
+                <a href="#!" class="brand-logo"><img src="assets/img/logo-m.png" class="img-fluid h-3"></a>
+                <a href="#" data-target="mobileNeyliie" class="sidenav-trigger"><i class="pe-7f-menu indigo-text text-darken-3"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="text-uppercase">
+                        <a href="#modalBottomSheet" class="btn btn-outline-indigo o-darken-4 border border-indigo border-darken-4 modal-trigger">
+                            Prendre rendez-vous
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right menu btt-nav-brackets hide-on-med-and-down text-uppercase" id="btt-nav">
+                  <li><a href="#home" class="indigo-text text-darken-3">Acceuil</a></li>
+                  <li><a href="#about" class="indigo-text text-darken-3">A propos</a></li>
+                  <li><a href="#services" class="indigo-text text-darken-3">Services</a></li>
+                  <li><a href="#article" class="indigo-text text-darken-3">Articles</a></li>
+                  <li><a href="#contact" class="indigo-text text-darken-3">Contacts</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav grey lighten-2 text-uppercase smoothscroll" id="mobileNeyliie">
+          <li class="text-center"><img src="assets/img/logo.png" class="img-fluid h-4"></li>
+          <hr class="grey lighten-2">
+          <li><a href="#home" class="indigo-text text-darken-3">Acceuil</a></li>
+          <li><a href="#about" class="indigo-text text-darken-3">A propos</a></li>
+          <li><a href="#services" class="indigo-text text-darken-3">Services</a></li>
+          <li><a href="#article" class="indigo-text text-darken-3">Articles</a></li>
+          <li><a href="#contact" class="indigo-text text-darken-3">Contacts</a></li>
+        </ul>
+    </header>
+
+    <!-- corps de la page -->
+    <main>
+      <!-- acceuil -->
+      <section id="home" class="shadow-box hero-section set-bg" data-setbg="assets/img/photos/bg.jpg">
+        <div class="center-flex">
+            <div class="home-container">
+                <div class="hero-slider owl-carousel black">
+                    <!-- slider item -->
+                    <div class="hs-item">
+                        <div class="hs-content text-white indigo darken-3">
+                            <h2 class="text-neyllie-gd-2 lead">Soyez.<br>Unique.</h2>
+                            <p class="lead text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+                            <a href="#" class="btn neyllie-gd-2 btn-lg border border-light">Plus de details</a>
+                        </div>
+                        <div class="hs-preview set-bg" data-setbg="assets/img/photos/h1.jpg"></div>
+                    </div>
+                    <!-- slider item -->
+                    <div class="hs-item">
+                        <div class="hs-content text-white indigo darken-3">
+                            <h2 class="text-neyllie-gd-2 lead">Soyez.<br>Radieuse.</h2>
+                            <p class="lead text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+                            <a href="#" class="btn neyllie-gd-2 btn-lg border border-light">Plus de details</a>
+                        </div>
+                        <div class="hs-preview set-bg" data-setbg="assets/img/photos/h2.jpg"></div>
+                    </div>
+
+                    <!-- slider item -->
+                    <div class="hs-item">
+                        <div class="hs-content text-white indigo darken-3">
+                            <h2 class="text-neyllie-gd-2 lead">Soyez.<br>chic.</h2>
+                            <p class="lead text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+                            <a href="#" class="btn neyllie-gd-2 btn-lg border border-light">Plus de details</a>
+                        </div>
+                        <div class="hs-preview set-bg" data-setbg="assets/img/photos/h3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- a propos -->
+      <section id="about" class="content center-flex">
+        <div class="py-7 home-container">
+            <div class="container">
+                <p class="text-center mb-3">
+                    <img src="assets/img/logo.png" class="img-fluid w-50">
+                </p>
+
+                <p class="lead text-center">
+                    Décor au design très réfléchi, reflétant la zénitude. Une équipe aux petits soins pour la clientèle, des produits hauts de gamme pour une chevelure parfaite et éclatante de santé… tout a été imaginé au détail près ... rien que pour vous.
+                </p>
+            </div>
+            
+            <div class="row py-7">
+                <div class="col-lg-8">
+                    <h1 class="h1-fluid text-center">
+                        <span class="divine-font indigo-text text-darken-3">... Soyez unique</span>
+                    </h1>
+                    <p class="lead container-fluid text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p><br>
+                    <p class="lead container-fluid text-center">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="divine-font pt-5 text-center">
+                        - Un nom
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/img/photos/p1.jpg" class="img-fluid shadow-box materialboxed">
+                </div>
+
+            </div>
+
+            <div class="row pt-7">
+                <div class="col-lg-4">
+                    <img src="assets/img/photos/p2.jpg" class="img-fluid shadow-box materialboxed">
+                </div>
+                <div class="col-lg-8">
+                    <h1 class="h1-fluid text-center">
+                        <span class="divine-font indigo-text text-darken-3">... Tout sera satisfaction</span>
+                    </h1>
+                    <p class="lead container-fluid text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p><br>
+                    <p class="lead container-fluid text-center">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="divine-font py-5 text-center">
+                        - Divine Touch -
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section id="services" class="shadow-box jarallax" data-speed="0.2">
+        <div class="center-flex overlays-dark py-9">
+                
+
+                <div class="container">
+                    <h1 class="h1-fluid text-center">
+                        <span class="divine-font text-light">Nos Services</span>
+                    </h1>
+                    <p class="lead container-fluid text-center text-light pb-7">
+                        Nous attachons le plus grand soin à la qualité de nos services, nous prenons le temps de vous écouter afin de vous proposer ce qu’il vous conviendra le mieux en respectant votre personnalité. Pouvoir vous satisfaire est notre seule préoccupation.
+                    </p>
+                    <div class="row">
+                        <!-- service -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="abstract">
+                              <div class="ab-circle ab-blue-grey z-depth-2">
+                                <p class="center-flex blue-grey-text text-lighten-1 fz-4"> <i class="flt flt-016-woman"></i> </p>
+                              </div>
+                              <div class="ab-rounded z-depth-1 blue-grey">
+                                <p class="ab-text h1-fluid py-1 lead text-light center"> <span class="small">Coiffure</span> </p>
+                              </div>
+                              <div class="card ab-content blue-grey lighten-1 darken-2 pt-6">
+                                <div class=" card-body text-light p-4 text-justify">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <!-- service -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="abstract">
+                              <div class="ab-circle ab-blue-grey z-depth-2">
+                                <p class="center-flex blue-grey-text text-lighten-1 fz-4"> <i class="flt flt-048-makeup"></i> </p>
+                              </div>
+                              <div class="ab-rounded z-depth-1 blue-grey">
+                                <p class="ab-text h1-fluid py-1 lead text-light center"> <span class="small">MakeUp</span> </p>
+                              </div>
+                              <div class="card ab-content blue-grey lighten-1 darken-2 pt-6">
+                                <div class=" card-body text-light p-4 text-justify">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-2">
+                        <!-- service -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="abstract">
+                              <div class="ab-circle ab-blue-grey z-depth-2">
+                                <p class="center-flex blue-grey-text text-lighten-1 fz-4"> <i class="flt flt-009-makeup-5"></i> </p>
+                              </div>
+                              <div class="ab-rounded z-depth-1 blue-grey">
+                                <p class="ab-text h1-fluid py-1 lead text-light center"> <span class="small">Manicure</span> </p>
+                              </div>
+                              <div class="card ab-content blue-grey lighten-1 darken-2 pt-6">
+                                <div class=" card-body text-light p-4 text-justify">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <!-- service -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="abstract">
+                              <div class="ab-circle ab-blue-grey z-depth-2">
+                                <p class="center-flex blue-grey-text text-lighten-1 fz-4"> <i class="flt flt-025-makeup-3"></i> </p>
+                              </div>
+                              <div class="ab-rounded z-depth-1 blue-grey">
+                                <p class="ab-text h1-fluid py-1 lead text-light center"> <span class="small">Pedicure</span> </p>
+                              </div>
+                              <div class="card ab-content blue-grey lighten-1 darken-2 pt-6">
+                                <div class=" card-body text-light p-4 text-justify">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </section>
+
+      <!-- gallerie -->
+      <section id="gallerie" class="content">
+        <div class="center-flex py-7">
+            <div class="holder home-container">
+                <div class="container">
+                    <h1 class="h1-fluid text-center">
+                        <span class="divine-font indigo-text text-darken-3">Nos Oeuvres</span>
+                    </h1>
+                    <p class="lead container-fluid text-center pb-7">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="holder">
+                    <div class="row">
+                        <a href="assets/img/photos/g1.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g1.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                        <a href="assets/img/photos/g2.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g2.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                        <a href="assets/img/photos/g3.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g3.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                        <a href="assets/img/photos/g4.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g4.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                        <a href="assets/img/photos/g5.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g5.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                        <a href="assets/img/photos/g6.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g6.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                        <a href="assets/img/photos/g7.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g7.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                        <a href="assets/img/photos/g8.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g8.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                        <a href="assets/img/photos/g9.jpg" class="col-lg-4 col-md-2 col-sm-2 p-1 my-1 hover-me ov-h" data-fancybox="gallery" data-caption="Votre description se placera ici">
+                            <img src="assets/img/photos/g9.jpg" class="img-fluid z-depth-1"/>
+                        </a>
+                    </div>
+                    <p class="center">
+                        <button type="button" class="btn btn-outline-indigo o-darken-4 border border-indigo border-darken-4" id="plusPhotos">Voir plus de photo</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- article -->
+      <section id="article" class="shadow-box jarallax" data-speed="0.2">
+        <div class="center-flex py-7 overlays-dark">
+            <div class="text-light home-container">
+                <div class="holder">
+                    <h1 class="h1-fluid text-center">
+                        <span class="divine-font">On parle de nous</span>
+                    </h1>
+                    <p class="lead container-fluid text-center pb-7">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card post-module">
+                              <div class="thumbnail">
+                                <div class="date blue-grey">
+                                  <div class="day">01</div>
+                                  <div class="month">Nov</div>
+                                </div>
+                                <img src="assets/img/photos/n1.jpg" alt="..."/>
+                              </div>
+                              <div class="post-content">
+                                <div class="category blue-grey">Photos</div>
+                                <h1 class="title">Rien que pour vous</h1>
+                                <h2 class="news-sub-title"> <small>Divine Touch et vous.</small></h2>
+                                <p class="description card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <div class="post-meta">
+                                  <span class="timestamp"><i class="pe-7s-clock pe-lg"></i> Il y a 6 mins</span>
+                                  <span class="comments"><i class="pe-7s-look pe-lg"></i><a href="#"> 39 vues</a></span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="card post-module">
+                              <div class="thumbnail">
+                                <div class="date blue-grey">
+                                  <div class="day">01</div>
+                                  <div class="month">Nov</div>
+                                </div>
+                                <img src="assets/img/photos/n2.jpg" alt="..."/>
+                              </div>
+                              <div class="post-content">
+                                <div class="category blue-grey">Photos</div>
+                                <h1 class="title">Telle une reine</h1>
+                                <h2 class="news-sub-title"> <small>Du MakeUp de Pro.</small></h2>
+                                <p class="description card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <div class="post-meta">
+                                  <span class="timestamp"><i class="pe-7s-clock pe-lg"></i> Il y a 6 mins</span>
+                                  <span class="comments"><i class="pe-7s-look pe-lg"></i><a href="#"> 39 vues</a></span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="card post-module">
+                              <div class="thumbnail">
+                                <div class="date blue-grey">
+                                  <div class="day">01</div>
+                                  <div class="month">Nov</div>
+                                </div>
+                                <img src="assets/img/photos/n3.jpg" alt="..."/>
+                              </div>
+                              <div class="post-content">
+                                <div class="category blue-grey">Photos</div>
+                                <h1 class="title">La team parfaite</h1>
+                                <h2 class="news-sub-title"> <small>Communauté.</small></h2>
+                                <p class="description card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <div class="post-meta">
+                                  <span class="timestamp"><i class="pe-7s-clock pe-lg"></i> Il y a 6 mins</span>
+                                  <span class="comments"><i class="pe-7s-look pe-lg"></i><a href="#"> 39 vues</a></span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- clients -->
+      <section id="clients" class="content">
+        <div class="center-flex py-7">
+            <div class="home-container">
+                <div class="holder">
+                    <h1 class="h1-fluid text-center">
+                        <span class="divine-font indigo-text text-darken-3">Ce que nos clients en pensent</span>
+                    </h1>
+                    <p class="lead container-fluid text-center pb-7">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="items-loop py-5">
+                    <div class="owl-carousel loopClients owl-theme">
+                        <div class="item pt-8">
+                            <div class="card client-card">
+                              <div class="card-transparent"></div>
+                              <div class="avatar mx-auto white z-depth-2">
+                                <img src="assets/img/photos/t1.jpg" class="rounded-circle z-depth-2">
+                              </div>
+                              <div class="card-body">
+                                <h4 class="card-title divine-font fz-05">Happy clients 1</h4>
+                                <hr>
+                                <p class=""> Le lieu est juste super.Services impeccables.des pro:accueillantes et dynamiques .Prix y a pas mieux</p>
+                              </div>
+                            </div>
+                          </div>
+
+                        <div class="item pt-8">
+                            <div class="card client-card">
+                              <div class="card-transparent"></div>
+                              <div class="avatar mx-auto white z-depth-2">
+                                <img src="assets/img/photos/t2.jpg" class="rounded-circle z-depth-2">
+                              </div>
+                              <div class="card-body">
+                                <h4 class="card-title divine-font fz-05">Happy clients 2</h4>
+                                <hr>
+                                <p> Très satisfaite. Accueil chaleureux avec une équipe professionnelle, tout cela dans un très beau cadre. Bravo.</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="item pt-8">
+                            <div class="card client-card">
+                              <div class="card-transparent"></div>
+                              <div class="avatar mx-auto white z-depth-2">
+                                <img src="assets/img/photos/t3.jpg" class="rounded-circle z-depth-2">
+                              </div>
+                              <div class="card-body">
+                                <h4 class="card-title divine-font fz-05">Happy clients 3</h4>
+                                <hr>
+                                <p> Service impeccable, lieu accueillant, bon rapport qualité/prix. je recommande pour celles qui veulent du résultat!</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controllers text-center">
+                        <a class="btn btn-cl-left blue-grey darken-2 text-light prev"><i class="pe-7s-angle-left-circle pe-2x pe-va"></i> Précedent</a>
+                        <a class="btn btn-cl-right blue-grey darken-2 text-light next">Suivant <i class="pe-7s-angle-right-circle pe-2x pe-va"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- //corps de la page -->
+
+    <footer class="pt-7 pb-2 neyllie-gd-2 my-0 shadow-box" id="contact">
+      <div class="container text-center">
+        <img class="img-fluid h-10" src="assets/img/logo.png">
+        <p class="pt-4 text-dark">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+        </p>
+      </div>
+      <div class="row text-dark">
+        <!-- colonne volohany -->
+        <div class="col-md-4">
+          <h1 class="h1-fluid text-center">
+            <span class="small divine-font">Derniers articles</span>
+          </h1>
+          <div>
+            
+            <ul class="collection article-kebn">
+              <li class="collection-item transparent avatar hoverable">
+                <img src="assets/img/photos/h2.jpg" alt="" class="circle">
+                <span class="title bold">Article Divine Touch</span>
+                <p class="small"> 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et.
+                </p>
+                <p class="text-right">12-12-2019 à 23:10</p>
+              </li>
+
+              <li class="collection-item transparent avatar hoverable">
+                <img src="assets/img/photos/p2.jpg" alt="" class="circle">
+                <span class="title bold">Article Divine Touch</span>
+                <p class="small"> 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et.
+                </p>
+                <p class="text-right">12-12-2019 à 23:10</p>
+              </li>
+
+              <li class="collection-item transparent avatar hoverable">
+                <img src="assets/img/photos/resa.jpg" alt="" class="circle">
+                <span class="title bold">Article Divine Touch</span>
+                <p class="small"> 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et.
+                </p>
+                <p class="text-right">12-12-2019 à 23:10</p>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+
+
+        <!-- colonne volohany -->
+        <div class="col-md-4">
+          <h1 class="h1-fluid text-center">
+            <span class="small divine-font">Horaire</span>
+          </h1>
+          <div class="container">
+            <table class="centered">
+              <tbody class="lounahTable">
+                <tr>
+                  <th>Lundi</th>
+                  <td>09:00 - 18:10</td>
+                </tr>
+                <tr>
+                  <th>Mardi</th>
+                  <td>09:00 - 18:10</td>
+                </tr>
+                <tr>
+                  <th>Mercredi</th>
+                  <td>09:00 - 18:10</td>
+                </tr>
+                <tr>
+                  <th>Jeudi</th>
+                  <td>09:00 - 18:10</td>
+                </tr>
+                <tr>
+                  <th>Vendredi</th>
+                  <td>09:00 - 18:10</td>
+                </tr>
+                <tr>
+                  <th>Samedi</th>
+                  <td>09:00 - 18:10</td>
+                </tr>
+                <tr>
+                  <th>Dimanche</th>
+                  <td>Fermé</td>
+                </tr>
+              </tbody>
+            </table>            
+          </div>
+        </div>
+
+        <!-- colonne volohany -->
+        <div class="col-md-4">
+          <h1 class="h1-fluid text-center">
+            <span class="small divine-font">Contact</span>
+          </h1>
+          <div>
+            <ul class="collection mb-7 z-depth-2">
+              <li class="collection-item transparent avatar">
+                <i class="pe-7s-map-marker circle green"></i>
+                <span class="title bold">Votre adresse</span>
+                <p class=""> 
+                  Emplacement exacte ici<br>
+                  <i class="pe-7f-call pe-va pe-lg"> </i> 034 00 000 00<br>
+                  <i class="pe-7f-mail pe-va pe-lg"></i> contact@divine-touch.mg <br>
+                </p>
+                <p class="text-center text-uppercase">Antananarivo 101</p>
+              </li>
+            </ul>
+
+            <h4 class="h4-fluid text-center">
+                <span class="fz-05 divine-font">Réseaux sociaux</span>
+            </h4>
+            <div class="text-center">
+              <a class=" transparent mx-2 btn-lg btn-floating border border-dark" href="">
+                <i class="pe-so-facebook text-dark"></i>
+              </a>
+              <a class=" transparent mx-2 btn-lg btn-floating border border-dark" href="">
+                <i class="pe-so-instagram text-dark"></i>
+              </a>
+              <a class=" transparent mx-2 btn-lg btn-floating border border-dark" href="">
+                <i class="pe-so-linkedin text-dark"></i>
+              </a>
+              <a class=" transparent mx-2 btn-lg btn-floating border border-dark" href="">
+                <i class="pe-so-twitter text-dark"></i>
+              </a>
+            </div>          
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="grey">
+        <div class="text-center small">
+            <kbd>
+              &copy; www.divine-touch.mg | 2019 | Tous Droit Réservé | Un œuvre de <b class="">Tossina-The2Rtd</b>
+            </kbd>
+        </div>        
+      <hr class="grey">
+    </footer>
+    <!-- JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/neyllie.min.js"></script>
+    <!-- Personal JS -->
+    <script src="assets/js/perso.js"></script>
+    <script type="text/javascript">
+
+    </script>
+  </body>
+</html>

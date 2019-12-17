@@ -1,0 +1,250 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.flt {
+  display: inline-block;
+  font: normal normal normal 14px/1 Flaticon;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.flt-lg {
+  font-size: 2em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.flt-2x {
+  font-size: 2.8em;
+}
+.flt-3x {
+  font-size: 3.5em;
+}
+.flt-4x {
+  font-size: 4.5em;
+}
+.flt-5x {
+  font-size: 5.5em;
+}
+.flt-6x {
+  font-size: 6em; }
+
+.flt-7x {
+  font-size: 7em; }
+
+.flt-8x {
+  font-size: 8em; }
+
+.flt-9x {
+  font-size: 9em; }
+
+.flt-10x {
+  font-size: 10em; }
+.flt-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.flt-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.flt-ul > li {
+  position: relative;
+}
+.flt-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.flt-li.flt-lg {
+  left: -1.85714286em;
+}
+.flt-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.flt-pull-left {
+  float: left;
+}
+.flt-pull-right {
+  float: right;
+}
+.flt.flt-pull-left {
+  margin-right: .3em;
+}
+.flt.flt-pull-right {
+  margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
+.flt.right {
+  float: right;
+  margin-right: .3em;
+}
+.flt.left {
+  float: left;
+  margin-left: .3em;
+}
+.flt-spin {
+  -webkit-animation: flt-spin 2s infinite linear;
+  animation: flt-spin 2s infinite linear;
+}
+.flt-pulse {
+  -webkit-animation: flt-spin 1s infinite steps(8);
+  animation: flt-spin 1s infinite steps(8);
+}
+@-webkit-keyframes flt-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes flt-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.flt-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.flt-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.flt-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.flt-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.flt-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .flt-rotate-90,
+:root .flt-rotate-180,
+:root .flt-rotate-270,
+:root .flt-flip-horizontal,
+:root .flt-flip-vertical {
+  filter: none;
+}
+.flt-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.flt-stack-1x,
+.flt-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.flt-stack-1x {
+  line-height: inherit;
+}
+.flt-stack-2x {
+  font-size: 2em;
+}
+.flt-inverse {
+  color: #ffffff;
+}
+
+.flt-001-makeup-6:before { content: "\f100"; }
+.flt-002-eyeliner:before { content: "\f101"; }
+.flt-003-cotton-1:before { content: "\f102"; }
+.flt-004-perfume:before { content: "\f103"; }
+.flt-005-cream-2:before { content: "\f104"; }
+.flt-006-powder-4:before { content: "\f105"; }
+.flt-007-mascara-4:before { content: "\f106"; }
+.flt-008-box:before { content: "\f107"; }
+.flt-009-makeup-5:before { content: "\f108"; }
+.flt-010-powder-3:before { content: "\f109"; }
+.flt-011-spray:before { content: "\f10a"; }
+.flt-012-eye-shadow-1:before { content: "\f10b"; }
+.flt-013-facial-mask-1:before { content: "\f10c"; }
+.flt-014-brushes:before { content: "\f10d"; }
+.flt-015-facial-mask:before { content: "\f10e"; }
+.flt-016-woman:before { content: "\f10f"; }
+.flt-017-soap:before { content: "\f110"; }
+.flt-018-scissors:before { content: "\f111"; }
+.flt-019-mascara-3:before { content: "\f112"; }
+.flt-020-mirror:before { content: "\f113"; }
+.flt-021-liner-1:before { content: "\f114"; }
+.flt-022-eyelashes-curler:before { content: "\f115"; }
+.flt-023-mascara-2:before { content: "\f116"; }
+.flt-024-makeup-4:before { content: "\f117"; }
+.flt-025-makeup-3:before { content: "\f118"; }
+.flt-026-blush-1:before { content: "\f119"; }
+.flt-027-eye:before { content: "\f11a"; }
+.flt-028-mascara-1:before { content: "\f11b"; }
+.flt-029-brush:before { content: "\f11c"; }
+.flt-030-cream-1:before { content: "\f11d"; }
+.flt-031-powder-2:before { content: "\f11e"; }
+.flt-032-makeup-2:before { content: "\f11f"; }
+.flt-033-lipstick-1:before { content: "\f120"; }
+.flt-034-eyebrow:before { content: "\f121"; }
+.flt-035-makeup-1:before { content: "\f122"; }
+.flt-036-mascara:before { content: "\f123"; }
+.flt-037-dressing-table:before { content: "\f124"; }
+.flt-038-powder-1:before { content: "\f125"; }
+.flt-039-make-up:before { content: "\f126"; }
+.flt-040-eye-shadow:before { content: "\f127"; }
+.flt-041-lipstick:before { content: "\f128"; }
+.flt-042-lips:before { content: "\f129"; }
+.flt-043-eyelashes:before { content: "\f12a"; }
+.flt-044-blush:before { content: "\f12b"; }
+.flt-045-eyelid:before { content: "\f12c"; }
+.flt-046-cotton:before { content: "\f12d"; }
+.flt-047-cream:before { content: "\f12e"; }
+.flt-048-makeup:before { content: "\f12f"; }
+.flt-049-liner:before { content: "\f130"; }
+.flt-050-powder:before { content: "\f131"; }
